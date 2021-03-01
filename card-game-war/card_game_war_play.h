@@ -3,12 +3,11 @@
 
 #include "card_game_war_hand.h"
 
-#define CGW_TEST 1
+#define DEAL_NB_CARDS 16
+#define ENABLE_MAX_ROUND 1
+#define MAX_ROUND 1000
 
-#define CGW_DEAL_NB_CARDS 16
-#define CGW_ENABLE_MAX_ROUND 1
-#define CGW_MAX_ROUND 1000
-
+void init_game(HAND *player1, HAND *player2);
 int play_round(HAND *player1, HAND *player2);
 int play_game(HAND *player1, HAND *player2);
 
