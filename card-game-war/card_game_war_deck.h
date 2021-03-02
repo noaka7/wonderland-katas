@@ -27,10 +27,29 @@ typedef struct CARD {
 
 #define NB_CARDS (NB_SUITS * NB_RANKS)
 
+/**
+* @brief Get card from deck at given index
+*
+* @param index Index
+* @return Card at given index
+*/
+
 CARD get_card(int index);
 
 int init_deck();
 int shuffle_deck();
+
+/**
+* @brief Compare rank between card A and card B
+*
+* @param card_a card A
+* @param card_b card B
+* @return
+*    0 Ranks are equals
+*    1 Rank of card A is higher
+*    2 Rank of card B is higher
+*/
+
 int compare_cards(CARD card_a, CARD card_b);
 
 #endif // CARD_GAME_WAR_DECK_H
